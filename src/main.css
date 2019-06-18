@@ -1,0 +1,121 @@
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+.clearfix::after {
+  clear: both;
+  content: '';
+  display: table;
+}
+
+header {
+  height: 50px;
+  background: slategray;
+  line-height: 48px;
+}
+
+header img {
+  width: 50px;
+  float: left;
+  margin-right: 10px;
+}
+
+header nav {
+  float: left;
+  color: white;
+}
+
+header nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+header nav ul li.menu-item {
+  float: left;
+  margin-right: 10px;
+}
+
+article {
+  height: 2000px;
+  background: lightblue;
+}
+
+article div.space {
+  height: 50px;
+  background: darkkhaki;
+  position: relative;
+}
+
+article div.space div.rect {
+  width: 70px;
+  height: 70px;
+  margin: 0;
+  padding: 0;
+  background: darkkhaki;
+  position: absolute;
+  z-index: 0;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+  top: 15px;
+  left: 45%;
+}
+
+article section.about {
+  height: 700px;
+  background-image: url("./img/team.jpg");
+  background-size: cover;
+  position: relative;
+}
+
+article section.about div.cover {
+  height: 100%;
+  background: rgba(121, 117, 117, 0.637);
+}
+
+article section.about img {
+  width: 200px;
+  position: absolute;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  top: 35%;
+  left: 50%;
+}
+
+article section.about div.title {
+  width: 100%;
+  position: absolute;
+  text-align: center;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  top: 70%;
+  left: 50%;
+  color: white;
+}
+
+article section.about div.title p#devs-url {
+  font-size: 1rem;
+  letter-spacing: 10px;
+}
+
+article section.about div.title p#devs-name {
+  font-size: 2rem;
+  letter-spacing: 50px;
+}
+
+article section.activities {
+  height: 500px;
+  background: darkcyan;
+}
+
+article section.members {
+  height: 500px;
+  background: darkkhaki;
+}
+
+article section.contact {
+  height: 500px;
+  background: darkgray;
+}
+/*# sourceMappingURL=main.css.map */

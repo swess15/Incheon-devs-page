@@ -1,0 +1,117 @@
+html, body {
+    margin : 0;
+    padding : 0;
+}
+
+.clearfix::after {
+    clear: both;
+    content: '';
+    display: table;
+}
+
+header {
+    height: 50px;
+    background: slategray;
+    line-height: 48px;
+    img {
+        width: 50px;
+        float : left;
+        margin-right: 10px;
+    }
+    nav {
+        float : left;
+        color : white;
+        ul {
+            list-style: none;
+            margin : 0;
+            padding: 0;
+            
+            li.menu-item {
+                float : left;
+                margin-right : 10px;
+            }
+        }
+    }
+}
+
+
+article {
+    height : 2000px;
+    background : lightblue;
+
+    div.space {
+        height: 50px;
+        background: darkkhaki;
+        position: relative;
+
+        div.rect {
+            width: 70px;
+            height: 70px;
+            margin: 0;
+            padding: 0;
+            background: darkkhaki;
+            position: absolute;
+            z-index: 0;
+            transform: rotate(45deg);
+            top: 15px;
+            left: 45%;
+        }
+    }
+    
+    section.about{
+        height : 700px;
+        background-image: url("./img/team.jpg");
+        background-size: cover;
+        position: relative;
+
+        div.cover {
+            height : 100%;
+            background : rgba(121, 117, 117, 0.637);
+            
+        }
+        img {
+            width : 200px;
+            position : absolute;
+
+            // 요소 가운데 정렬
+            transform : translate(-50%, -50%);
+            top : 35%;
+            left : 50%;
+        }
+        div.title {
+            width: 100%;
+            position : absolute;
+            text-align : center;
+
+            // 요소 가운데 정렬
+            transform : translate(-50%, -50%);
+            top : 70%;
+            left : 50%;
+            color: white;
+
+            p#devs-url {
+                font-size : 1rem;
+                letter-spacing : 10px;
+            }
+            
+            p#devs-name {
+                font-size : 2rem;
+                letter-spacing : 50px;
+            }
+
+
+        }
+    }
+    section.activities{
+        height : 500px;
+        background: darkcyan;
+    }
+    section.members{
+        height : 500px;
+        background: darkkhaki;
+    }
+    section.contact{
+        height : 500px;
+        background: darkgray;
+    }
+}
