@@ -9,15 +9,27 @@ html, body {
     display: table;
 }
 
+// 헤더, 로고 및 네비게이션 메뉴
 header {
     height: 50px;
-    background: slategray;
+    z-index: 9999;
+    background: #ffd89b;  
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #19547b, #ffd89b);  
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #19547b, #ffd89b); 
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     line-height: 48px;
+
+    // 로고, ID(Incheon Dev's)
     img {
         width: 50px;
         float : left;
-        margin-right: 10px;
+        margin-left: 2px;
+        margin-right: 12px;
     }
+
+    // 네비게이션 메뉴
     nav {
         float : left;
         color : white;
@@ -28,47 +40,52 @@ header {
             
             li.menu-item {
                 float : left;
-                margin-right : 10px;
+                margin-right : 24px;
             }
         }
     }
 }
 
-
+// 메인 섹션
 article {
     height : 2000px;
     background : lightblue;
 
+    // 중간 간격 띄우기용 division
     div.space {
         height: 50px;
-        background: darkkhaki;
+        background: rgb(196, 192, 138);
         position: relative;
 
+        // 가운데 세모 표시용 rectangle
         div.rect {
             width: 70px;
             height: 70px;
             margin: 0;
             padding: 0;
-            background: darkkhaki;
+            background: rgb(196, 192, 138);
             position: absolute;
             z-index: 0;
             transform: rotate(45deg);
             top: 15px;
-            left: 45%;
+            left: 47%;
         }
     }
     
+    // 개요 및 타이틀 섹션
     section.about{
         height : 700px;
         background-image: url("./img/team.jpg");
         background-size: cover;
         position: relative;
 
+        // 블러 효과
         div.cover {
             height : 100%;
             background : rgba(121, 117, 117, 0.637);
             
         }
+        // 로고 아이콘 이미지
         img {
             width : 200px;
             position : absolute;
@@ -78,7 +95,7 @@ article {
             top : 35%;
             left : 50%;
         }
-        div.title {
+        div.container {
             width: 100%;
             position : absolute;
             text-align : center;
@@ -89,12 +106,12 @@ article {
             left : 50%;
             color: white;
 
-            p#devs-url {
+            p#about-url {
                 font-size : 1rem;
                 letter-spacing : 10px;
             }
             
-            p#devs-name {
+            p#about-name {
                 font-size : 2rem;
                 letter-spacing : 50px;
             }
@@ -102,16 +119,59 @@ article {
 
         }
     }
+
+    // 활동 소개 및 기록 섹션
     section.activities{
         height : 500px;
-        background: darkcyan;
+        background : white;
+        padding : 250px 100px 200px 100px; 
+
+        div.container {
+            p {
+                margin : 0;
+                text-align : center;
+            }
+
+            p.activ {
+                margin-bottom : 50px;
+            }
+
+            p.activ-title {
+                font-size: 3rem;
+                font-weight: 600;
+            }
+
+            p.activ-disc {
+                font-size : 1.1rem;
+            }
+
+            div.activ-problem {
+                margin-bottom: 46px;
+                font-size : 0.8rem;
+                color : rgba(112, 128, 144, 0.829);
+
+                p {
+                    margin-bottom: 12px;
+                }
+            }
+
+            p.activ-intro {
+                margin : 0 auto;
+                font-size : 0.9rem;
+            }
+        }
     }
+
+    // 멤버 소개 섹션
     section.members{
         height : 500px;
         background: darkkhaki;
     }
+
+    // 컨택 섹션
     section.contact{
         height : 500px;
         background: darkgray;
     }
 }
+

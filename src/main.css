@@ -11,14 +11,21 @@ html, body {
 
 header {
   height: 50px;
-  background: slategray;
+  z-index: 9999;
+  background: #ffd89b;
+  /* fallback for old browsers */
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: -webkit-gradient(linear, left top, right top, from(#19547b), to(#ffd89b));
+  background: linear-gradient(to right, #19547b, #ffd89b);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   line-height: 48px;
 }
 
 header img {
   width: 50px;
   float: left;
-  margin-right: 10px;
+  margin-left: 2px;
+  margin-right: 12px;
 }
 
 header nav {
@@ -34,7 +41,7 @@ header nav ul {
 
 header nav ul li.menu-item {
   float: left;
-  margin-right: 10px;
+  margin-right: 24px;
 }
 
 article {
@@ -44,7 +51,7 @@ article {
 
 article div.space {
   height: 50px;
-  background: darkkhaki;
+  background: #c4c08a;
   position: relative;
 }
 
@@ -53,13 +60,13 @@ article div.space div.rect {
   height: 70px;
   margin: 0;
   padding: 0;
-  background: darkkhaki;
+  background: #c4c08a;
   position: absolute;
   z-index: 0;
   -webkit-transform: rotate(45deg);
           transform: rotate(45deg);
   top: 15px;
-  left: 45%;
+  left: 47%;
 }
 
 article section.about {
@@ -83,7 +90,7 @@ article section.about img {
   left: 50%;
 }
 
-article section.about div.title {
+article section.about div.container {
   width: 100%;
   position: absolute;
   text-align: center;
@@ -94,19 +101,53 @@ article section.about div.title {
   color: white;
 }
 
-article section.about div.title p#devs-url {
+article section.about div.container p#about-url {
   font-size: 1rem;
   letter-spacing: 10px;
 }
 
-article section.about div.title p#devs-name {
+article section.about div.container p#about-name {
   font-size: 2rem;
   letter-spacing: 50px;
 }
 
 article section.activities {
   height: 500px;
-  background: darkcyan;
+  background: white;
+  padding: 250px 100px 200px 100px;
+}
+
+article section.activities div.container p {
+  margin: 0;
+  text-align: center;
+}
+
+article section.activities div.container p.activ {
+  margin-bottom: 50px;
+}
+
+article section.activities div.container p.activ-title {
+  font-size: 3rem;
+  font-weight: 600;
+}
+
+article section.activities div.container p.activ-disc {
+  font-size: 1.1rem;
+}
+
+article section.activities div.container div.activ-problem {
+  margin-bottom: 46px;
+  font-size: 0.8rem;
+  color: rgba(112, 128, 144, 0.829);
+}
+
+article section.activities div.container div.activ-problem p {
+  margin-bottom: 12px;
+}
+
+article section.activities div.container p.activ-intro {
+  margin: 0 auto;
+  font-size: 0.9rem;
 }
 
 article section.members {
