@@ -9,9 +9,31 @@ html, body {
   display: table;
 }
 
+a {
+  color: white;
+}
+
+a:link {
+  color: white;
+  text-decoration: none;
+}
+
+a:visited {
+  color: white;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #e6be76;
+}
+
+a:active {
+  color: slategray;
+}
+
 header {
   height: 50px;
-  z-index: 9999;
+  z-index: 999;
   background: #ffd89b;
   /* fallback for old browsers */
   /* Chrome 10-25, Safari 5.1-6 */
@@ -281,5 +303,17 @@ article section.members {
 article section.contact {
   height: 500px;
   background: darkgray;
+}
+
+div.top {
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+  z-index: 9999;
+}
+
+div.top img {
+  width: 50px;
+  opacity: 0.4;
 }
 /*# sourceMappingURL=main.css.map */

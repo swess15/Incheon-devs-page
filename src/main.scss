@@ -9,10 +9,16 @@ html, body {
     display: table;
 }
 
+a { color : white;}
+a:link { color: white; text-decoration: none; }
+a:visited { color: white; text-decoration: none;} 
+a:hover { color: rgb(230, 190, 118); }
+a:active { color : slategray; }
+
 // 헤더, 로고 및 네비게이션 메뉴
 header {
     height: 50px;
-    z-index: 9999;
+    z-index: 999;
     background: #ffd89b;  
     /* fallback for old browsers */
     background: -webkit-linear-gradient(to right, #19547b, #ffd89b);  
@@ -44,6 +50,7 @@ header {
             }
         }
     }
+
 }
 
 // 메인 섹션
@@ -286,4 +293,17 @@ article {
         background: darkgray;
     }
 }
+
+
+    // TOP 이동 아이콘
+    div.top {
+        position : fixed;
+        bottom : 10px;
+        right : 10px;
+        z-index: 9999;
+        img {
+            width : 50px;
+            opacity: 0.4;
+        }
+    }
 

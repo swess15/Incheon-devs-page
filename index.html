@@ -13,18 +13,24 @@
         <img src="https://incheon.devs.co.kr/static/media/logo.ef37203c.png" alt="logo">
         <nav>
             <ul class="menu-bar clearfix">
-                <li class="menu-item">About</li>
-                <li class="menu-item">Activities</li>
-                <li class="menu-item">Members</li>
-                <li class="menu-item">Contact</li>
+                <li class="menu-item"><a href="#about">About</a></li>
+                <li class="menu-item"><a href="#activ">Activities</a></li>
+                <li class="menu-item"><a href="#members">Members</a></li>
+                <li class="menu-item"><a href="#contact"> Contact</a></li>
             </ul>
         </nav>
+        <!-- TOP 이동 아이콘 -->
+        <div class="top">
+            <a href="#">
+                <img src="http://chittagongit.com/download/13918" alt="to top page">
+            </a>
+        </div>
     </header>
 
     <!-- 메인 섹션 -->
     <article>
         <!-- ID 소개 섹션 -->
-        <section class="about">
+        <section class="about" id="about">
             <img src="https://incheon.devs.co.kr/static/media/logo.ef37203c.png" alt="logo">
             <div class="container">
                 <p id="about-url">
@@ -37,14 +43,15 @@
                     인천 지역 프로그래밍 스터디 그룹 & 인천 지역 개발자 커뮤니티
                 </p>
             </div>
-            <div class="cover">블러용 이미지</div>
+            <!-- 블러용 이미지 -->
+            <div class="cover"></div>
         </section>
         <div class="space">
             <div class="rect"></div>
         </div>
 
         <!-- 활동 소개 섹션 -->
-        <section class="activities">
+        <section class="activities" id="activ">
             <div class="container">
                 <p class="activ activ-title">
                     ABOUT INCHEON DEV's?
@@ -147,13 +154,13 @@
         </div>
 
         <!-- 멤버 소개 섹션 -->
-        <section class="members"></section>
+        <section class="members" id="members"></section>
         <div class="space">
             <div class="rect"></div>
         </div>
 
         <!-- 컨택 세션 -->
-        <section class="contact"></section>
+        <section class="contact" id="contact"></section>
     </article>
 
     <!-- 푸터 -->
