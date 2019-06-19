@@ -114,7 +114,7 @@ article section.about div.container p#about-name {
 article section.activities {
   height: 500px;
   background: white;
-  padding: 250px 100px 200px 100px;
+  padding: 250px 100px 150px 100px;
 }
 
 article section.activities div.container p {
@@ -148,6 +148,90 @@ article section.activities div.container div.activ-problem p {
 article section.activities div.container p.activ-intro {
   margin: 0 auto;
   font-size: 0.9rem;
+}
+
+article section.activities-detail {
+  height: 1000px;
+  background: white;
+}
+
+article section.activities-detail div.activ-detail-title {
+  font-size: 3rem;
+  font-weight: 600;
+  text-align: center;
+}
+
+article section.activities-detail div.container {
+  margin: 100px auto 0 auto;
+  width: 1200px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  background: white;
+  text-align: center;
+  /*
+            ul.activ-card{
+                list-style : none;
+                margin : 0;
+                padding : 0;
+
+                li.activ-card-list {
+                    float : left;
+
+                    div.card {
+                        width: 240px;
+                        height: 300px;
+                        margin-right : 60px;
+                        background: silver;
+                    }
+                }
+            }
+            */
+}
+
+article section.activities-detail div.container div.card {
+  width: 260px;
+  height: 340px;
+  -webkit-box-shadow: 3px 3px 2px 1px rgba(143, 140, 140, 0.521);
+          box-shadow: 3px 3px 2px 1px rgba(143, 140, 140, 0.521);
+  border-radius: 10px;
+  margin-bottom: 48px;
+  background: white;
+}
+
+article section.activities-detail div.container div.card div.card-img {
+  height: 180px;
+  border-radius: 10px 10px 0 0;
+  background: url("https://www.weetechsolution.com/upload/Evolution-of-Swift-in-iOS-Apps-development.png");
+  background-size: cover;
+  background-position-x: -30px;
+}
+
+article section.activities-detail div.container div.card div.card-recruit {
+  width: 90%;
+  margin: 8px auto;
+  padding-bottom: 8px;
+  border-bottom: 3px dotted slategray;
+}
+
+article section.activities-detail div.container div.card div.card-title {
+  margin-bottom: 6px;
+  font-size: 1.25rem;
+  font-weight: 200;
+}
+
+article section.activities-detail div.container div.card div.card-disc {
+  font-size: 0.8rem;
+  padding: 0 12px;
+  text-align: justify;
 }
 
 article section.members {
