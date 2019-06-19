@@ -51,6 +51,18 @@ header {
         }
     }
 
+    // TOP 이동 아이콘
+    div.top {
+        position : fixed;
+        bottom : 10px;
+        right : 10px;
+        z-index: 9999;
+        img {
+            width : 50px;
+            opacity: 0.4;
+        }
+    }
+
 }
 
 // 메인 섹션
@@ -294,16 +306,4 @@ article {
     }
 }
 
-
-    // TOP 이동 아이콘
-    div.top {
-        position : fixed;
-        bottom : 10px;
-        right : 10px;
-        z-index: 9999;
-        img {
-            width : 50px;
-            opacity: 0.4;
-        }
-    }
 

@@ -66,6 +66,18 @@ header nav ul li.menu-item {
   margin-right: 24px;
 }
 
+header div.top {
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+  z-index: 9999;
+}
+
+header div.top img {
+  width: 50px;
+  opacity: 0.4;
+}
+
 article {
   height: 2000px;
   background: lightblue;
@@ -303,17 +315,5 @@ article section.members {
 article section.contact {
   height: 500px;
   background: darkgray;
-}
-
-div.top {
-  position: fixed;
-  bottom: 10px;
-  right: 10px;
-  z-index: 9999;
-}
-
-div.top img {
-  width: 50px;
-  opacity: 0.4;
 }
 /*# sourceMappingURL=main.css.map */
