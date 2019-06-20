@@ -143,7 +143,7 @@ article {
     section.activities{
         height : 500px;
         background : white;
-        padding : 250px 100px 100px 100px; 
+        padding : 150px 100px 100px 100px; 
 
         div.container {
             p {
@@ -297,6 +297,86 @@ article {
     section.members{
         height : 500px;
         background: darkkhaki;
+        padding : 150px 100px 100px 100px; 
+
+        div.members-title {
+            font-size : 3rem;
+            font-weight : 600;
+            margin-bottom : 80px;
+            text-align : center;
+        }
+
+        div.members-list {
+            display : flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: space-around;
+
+            div.members-item {
+                width : 200px;
+                height : 200px;
+                position: relative;
+                border : 5px solid white;
+                border-radius : 200px;
+                background : slategray;
+
+                div.members-disc {
+                    padding : 0;
+                    position : absolute;
+                    text-align: center;
+                    transform : translate(-50%, -50%);
+                    top : 150%;
+                    left : 50%;
+
+                    p {
+                        margin : 0;
+                        padding : 0;
+                    }
+
+                    p.member-name {
+                        font-size : 1.1rem;
+                    }
+                    p.member-career {
+                        font-size : 1.3rem; 
+                        margin-bottom : 5px;
+                    }
+                    p.member-intro {
+                        display : inline-block;
+                        width: 200px;
+                        font-size : 0.8rem;
+                        margin-bottom :30px;
+                    }
+                    a {
+                        img {
+                            width : 30px;
+                            opacity : 0.8;
+                        }
+                    }
+                }
+            }
+
+            div#rbert {
+                background : url('https://scontent-icn1-1.xx.fbcdn.net/v/t1.0-9/60719055_1184011188438978_2630701716869218304_o.jpg?_nc_cat=106&_nc_ht=scontent-icn1-1.xx&oh=f6b924056f678840fd3a72ea21661919&oe=5D7D7CEB');
+                background-size: contain;
+            }
+            div#swess {
+                background: url('https://scontent-icn1-1.xx.fbcdn.net/v/t1.0-9/60909148_2229904343767068_8474259204184473600_o.jpg?_nc_cat=109&_nc_ht=scontent-icn1-1.xx&oh=99eac0b0a4433a20eefb836e090500b3&oe=5D8281C1');
+                background-size: contain;
+            }
+
+            div#sbjang {
+                background: url('https://incheon.devs.co.kr/static/media/profile_sb.ec147cb1.jpg');
+                background-size: contain;
+            }
+
+            div#love {
+                background: url('https://incheon.devs.co.kr/static/media/profile_eh.43c01322.jpg');
+                background-size: contain;
+            }
+            
+
+            
+        }
     }
 
     // 컨택 섹션
